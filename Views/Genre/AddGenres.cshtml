@@ -1,0 +1,47 @@
+﻿@model ENTJAVA_Week3.Models.ViewModel.GenreModel
+@{
+    ViewBag.Title = "AddGenres";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<<h2>Genres</h2>
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.Genres, htmlAttributes: new { @class =
+        "control-label col-md-2" })
+            <label>
+                <input type="checkbox" name="genres[]" value="HN" class="form-control">
+                Hard News
+            </label><br>
+            <label>
+                <input type="checkbox" name="genres[]" value="BN" class="form-control">
+                Breaking News
+            </label><br>
+            <label>
+                <input type="checkbox" name="genres[]" value="FS" class="form-control">
+                Feature Stories
+            </label><br>
+            <label>
+                <input type="checkbox" name="genres[]" value="OP" class="form-control">
+                Opinion Pieces
+            </label><br>
+            <label>
+                <input type="checkbox" name="genres[]" value="SN" class="form-control">
+                Sports News
+            </label><br>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Done" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+<div>
+    @Html.ActionLink("Back to Main", "Index","Home")
+</div>
