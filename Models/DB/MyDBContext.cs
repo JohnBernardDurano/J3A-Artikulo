@@ -118,13 +118,13 @@ namespace ENTJAVA_Week3.Models.DB
                 .HasColumnName("SYSGenresID")
                 .HasColumnType("int");
 
-                entity.Property(e => e.UserID)
-                .HasColumnName("SYSUserID")
-                .HasColumnType("int");
+                entity.Property(e => e.LoginName)
+                .HasColumnName("LoginName")
+                .HasMaxLength(50);
 
-                entity.Property(e => e.ChooseGenres)
+                entity.Property(e => e.GenreType)
                 .HasColumnName("GenreType")
-                .HasMaxLength(3)
+                .HasMaxLength(50)
                 .IsUnicode(false);
 
                 entity.Property(e => e.CreatedBy)
@@ -135,13 +135,13 @@ namespace ENTJAVA_Week3.Models.DB
                   .HasColumnName("RowCreatedDateTime")
                   .HasDefaultValueSql("CURRENT_TIMESTAMP");
 
-                entity.Property(e => e.ModifiedBy)
-                  .HasColumnName("RowModifiedSYSUserID")
-                  .HasColumnType("int");
+                //entity.Property(e => e.ModifiedBy)
+                //  .HasColumnName("RowModifiedSYSUserID")
+                //  .HasColumnType("int");
 
-                entity.Property(e => e.ModifiedDateTime)
-                  .HasColumnName("RowModifiedDateTime")
-                  .HasDefaultValueSql("CURRENT_TIMESTAMP");
+                //entity.Property(e => e.ModifiedDateTime)
+                //  .HasColumnName("RowModifiedDateTime")
+                //  .HasDefaultValueSql("CURRENT_TIMESTAMP");
 
             });
 

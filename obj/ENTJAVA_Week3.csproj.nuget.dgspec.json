@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DURANO JOHN\\Source\\Repos\\Week4\\ENTJAVA_Week3.csproj": {}
+    "C:\\Users\\DURANO JOHN\\source\\repos\\Week4\\ENTJAVA_Week3.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DURANO JOHN\\Source\\Repos\\Week4\\ENTJAVA_Week3.csproj": {
+    "C:\\Users\\DURANO JOHN\\source\\repos\\Week4\\ENTJAVA_Week3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DURANO JOHN\\Source\\Repos\\Week4\\ENTJAVA_Week3.csproj",
+        "projectUniqueName": "C:\\Users\\DURANO JOHN\\source\\repos\\Week4\\ENTJAVA_Week3.csproj",
         "projectName": "ENTJAVA_Week3",
-        "projectPath": "C:\\Users\\DURANO JOHN\\Source\\Repos\\Week4\\ENTJAVA_Week3.csproj",
+        "projectPath": "C:\\Users\\DURANO JOHN\\source\\repos\\Week4\\ENTJAVA_Week3.csproj",
         "packagesPath": "C:\\Users\\DURANO JOHN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DURANO JOHN\\Source\\Repos\\Week4\\obj\\",
+        "outputPath": "C:\\Users\\DURANO JOHN\\source\\repos\\Week4\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

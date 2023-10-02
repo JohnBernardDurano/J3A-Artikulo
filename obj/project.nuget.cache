@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "L/lHLWOSVgWfzVfrKEAykoUG99163Ao/SfrloI0Wqu1YXrhfnnGp9BdG95IpiJYL9FoFD48arQ944WskC+k6rw==",
+  "dgSpecHash": "+c3oDpDjT+gpmZdb6BJMgYfIBzwgJBh1KwsRhrRKFLHuXF9B0IMQS3vgUoCf+Yt0/XTOHUwDghIknvuAEjRMBQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\DURANO JOHN\\Source\\Repos\\Week4\\ENTJAVA_Week3.csproj",
+  "projectFilePath": "C:\\Users\\DURANO JOHN\\source\\repos\\Week4\\ENTJAVA_Week3.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DURANO JOHN\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\DURANO JOHN\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

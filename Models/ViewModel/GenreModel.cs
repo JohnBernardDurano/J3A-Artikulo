@@ -6,12 +6,12 @@ namespace ENTJAVA_Week3.Models.ViewModel
     {
         [Key]
         public int GenresID { get; set; }
-        [Required(ErrorMessage = "*")]
-        public int UserID { get; set; }
-        [Required(ErrorMessage = "*")]
-        public required string Genres { get; set; }
-        [Required(ErrorMessage = "*")]
-        [Display(Name = "Created By")]
+        //[Required(ErrorMessage = "*")]
+        public required string LoginName { get; set; }
+        //[Required(ErrorMessage = "*")]
+        public required string GenreType { get; set; }
+        //[Required(ErrorMessage = "*")]
+        //[Display(Name = "Created By")]
         public int CreatedBy { get; set; }
     }
 

@@ -8,36 +8,30 @@
 @using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
-    <div class="form-horizontal">
-        <hr />
-        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.LoginName, htmlAttributes: new { @class =
+    "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.LoginName, new { htmlAttributes = new {
+        @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.LoginName, "", new { @class = "text-danger"
+        })
+        </div>
+
         <div class="form-group">
-            @Html.LabelFor(model => model.Genres, htmlAttributes: new { @class =
+            @Html.LabelFor(model => model.GenreType, htmlAttributes: new { @class =
         "control-label col-md-2" })
-            <label>
-                <input type="checkbox" name="genres[]" value="HN" class="form-control">
-                Hard News
-            </label><br>
-            <label>
-                <input type="checkbox" name="genres[]" value="BN" class="form-control">
-                Breaking News
-            </label><br>
-            <label>
-                <input type="checkbox" name="genres[]" value="FS" class="form-control">
-                Feature Stories
-            </label><br>
-            <label>
-                <input type="checkbox" name="genres[]" value="OP" class="form-control">
-                Opinion Pieces
-            </label><br>
-            <label>
-                <input type="checkbox" name="genres[]" value="SN" class="form-control">
-                Sports News
-            </label><br>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.GenreType, new { htmlAttributes = new {
+            @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.GenreType, "", new { @class = "text-danger"
+            })
+            </div>
         </div>
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Done" class="btn btn-default" />
+                <input type="submit" value="Register" class="btn btn-default" />
             </div>
         </div>
     </div>

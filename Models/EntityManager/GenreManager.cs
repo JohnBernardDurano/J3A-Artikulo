@@ -17,10 +17,12 @@ namespace ENTJAVA_Week3.Models.EntityManager
                 SYSGenres newGenres = new()
                 {
                     GenreID = user.GenresID,
+                    LoginName = user.LoginName,
+                    GenreType = user.GenreType,
                     CreatedBy = 1,
                     CreatedDateTime = DateTime.Now,
-                    ModifiedBy = 1,
-                    ModifiedDateTime = DateTime.Now
+                    //ModifiedBy = 1,
+                    //ModifiedDateTime = DateTime.Now
                 };
 
                 db.SYSGenres.Add(newGenres);
@@ -28,6 +30,15 @@ namespace ENTJAVA_Week3.Models.EntityManager
 
             }
         }
+        public bool IsLoginNameExist(string loginName)
+        {
+            using (MyDBContext db = new MyDBContext())
+            {
+                return db.SystemUsers.Where(u => u.LoginName.Equals(loginName)).Any();
+            }
+        }
     }
+
+
 }
 
