@@ -13,6 +13,7 @@
                 <th>First Name</th>
                 <th>Last Name</th>
                 <th>Gender</th>
+                <th>Genre</th>
                 <th>Action</th>
             </tr>
         </thead>
@@ -24,7 +25,8 @@
                     <td>@Html.DisplayFor(m => i.FirstName)</td>
                     <td>@Html.DisplayFor(m => i.LastName)</td>
                     <td>@Html.DisplayFor(m => i.Gender)</td>
-                    <td><a href="#" class="lnkEdit" data-userid="@i.UserID" data-login="@i.LoginName" data-firstname="@i.FirstName" data-lastname="@i.LastName" data-gender="@i.Gender">Edit</a></td>
+                    <td>@Html.DisplayFor(m => i.Genre)</td>
+                    <td><a href="#" class="lnkEdit" data-userid="@i.UserID" data-login="@i.LoginName" data-firstname="@i.FirstName" data-lastname="@i.LastName" data-gender="@i.Gender" data-genre="@i.Genre">Edit</a></td>
                 </tr>
             }
         </tbody>
@@ -56,6 +58,10 @@
                     <div class="form-group">
                         <label for="editGender">Gender:</label>
                         <input type="text" class="form-control" id="editGender">
+                    </div>
+                    <div class="form-group">
+                        <label for="editGenre">Genre:</label>
+                        <input type="text" class="form-control" id="editGenre">
                     </div>
                 </form>
             </div>

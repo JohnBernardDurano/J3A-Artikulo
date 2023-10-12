@@ -21,6 +21,9 @@ namespace ENTJAVA_Week3.Models.ViewModel
         public string Gender { get; set; }
         [Required(ErrorMessage = "*")]
         [Display(Name = "Created By")]
+        public int GenreType { get; set; }
+        [Required(ErrorMessage = "*")]
+        [Display(Name ="Registered Genres")]
         public int CreatedBy { get; set; }
     }
 

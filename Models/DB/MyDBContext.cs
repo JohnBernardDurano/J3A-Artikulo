@@ -69,6 +69,7 @@ namespace ENTJAVA_Week3.Models.DB
                   .HasColumnName("RowCreatedDateTime")
                   .HasDefaultValueSql("CURRENT_TIMESTAMP");
 
+
                 entity.Property(e => e.ModifiedBy)
                   .HasColumnName("RowModifiedSYSUserID")
                   .HasColumnType("int");
