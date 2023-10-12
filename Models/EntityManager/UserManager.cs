@@ -109,21 +109,27 @@ namespace ENTJAVA_Week3.Models.EntityManager
 
             using (MyDBContext db = new MyDBContext())
             {
-                var users = from u in db.Users
-                            join us in db.SystemUsers
-                        on u.UserID equals us.UserID
-                            join sg in db.SYSGenres
-                        on u.UserID equals sg.GenreID
-                            select new { u, us, sg };
+                //var users = from u in db.Users
+                //            join us in db.SystemUsers
+                //        on u.UserID equals us.UserID
+                //            join sg in db.SYSGenres
+                //        on u.UserID equals sg.GenreID
+                //            //select new { u, us};
+                //            select new { u, us, sg };
+
+                var users = from u in db.SystemUsers
+                            join us in db.SYSGenres
+                        on u.LoginName equals us.LoginName
+                            select new { u, us};
 
                 list.Users = users.Select(records => new UserModel()
                 {
                     LoginName = records.us.LoginName,
-                    FirstName = records.u.FirstName,
-                    LastName = records.u.LastName,
-                    Gender = records.u.Gender,
+                    //FirstName = records.u.FirstName,
+                    //LastName = records.u.LastName,
+                    //Gender = records.u.Gender,
                     CreatedBy = records.u.CreatedBy,
-                    Genre = records.sg.GenreID
+                    Genre = records.us.GenreType
                 }).ToList();
             }
 
