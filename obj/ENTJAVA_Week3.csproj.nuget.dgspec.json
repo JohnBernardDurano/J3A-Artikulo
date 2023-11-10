@@ -54,6 +54,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.4, )"
+            },
+            "NewsAPI": {
+              "target": "Package",
+              "version": "[0.7.0, )"
             }
           },
           "imports": [
@@ -75,7 +79,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

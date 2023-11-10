@@ -15,4 +15,9 @@ namespace ENTJAVA_Week3.Models.ViewModel
         public int CreatedBy { get; set; }
     }
 
+    public class GenresModel
+    {
+        public List<UserModel> Genres { get; set; }
+    }
+
 }

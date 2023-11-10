@@ -92,6 +92,7 @@
             var firstName = $(this).data("firstname");
             var lastName = $(this).data("lastname");
             var gender = $(this).data("gender");
+            var genre = $(this).data("genre");
 
             // Populate the modal with user data
             editId.val(userId);
@@ -99,6 +100,7 @@
             editFirstName.val(firstName);
             editLastName.val(lastName);
             editGender.val(gender);
+            editGenre.val(genre);
 
             // Show the modal
             editModal.modal("show");
@@ -112,7 +114,8 @@
                 LoginName: editLoginName.val(),
                 FirstName: editFirstName.val(),
                 LastName: editLastName.val(),
-                Gender: editGender.val()
+                Gender: editGender.val(),
+                Genre: editGenre.val()
             };
 
             // Perform your update logic here (e.g., call an API or submit a form)

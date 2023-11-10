@@ -120,14 +120,16 @@ namespace ENTJAVA_Week3.Models.EntityManager
                 var users = from u in db.SystemUsers
                             join us in db.SYSGenres
                         on u.LoginName equals us.LoginName
-                            select new { u, us};
+                            join sg in db.Users
+                        on u.UserID equals sg.UserID
+                            select new { u, us, sg};
 
                 list.Users = users.Select(records => new UserModel()
                 {
                     LoginName = records.us.LoginName,
-                    //FirstName = records.u.FirstName,
-                    //LastName = records.u.LastName,
-                    //Gender = records.u.Gender,
+                    FirstName = records.sg.FirstName,
+                    LastName = records.sg.LastName,
+                    Gender = records.sg.Gender,
                     CreatedBy = records.u.CreatedBy,
                     Genre = records.us.GenreType
                 }).ToList();

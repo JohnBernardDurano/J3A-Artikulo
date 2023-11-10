@@ -148,3 +148,5 @@ C:\Users\DURANO JOHN\Source\Repos\Week4\obj\Debug\net7.0\refint\ENTJAVA_Week3.dl
 C:\Users\DURANO JOHN\Source\Repos\Week4\obj\Debug\net7.0\ENTJAVA_Week3.pdb
 C:\Users\DURANO JOHN\Source\Repos\Week4\obj\Debug\net7.0\ENTJAVA_Week3.genruntimeconfig.cache
 C:\Users\DURANO JOHN\Source\Repos\Week4\obj\Debug\net7.0\ref\ENTJAVA_Week3.dll
+C:\Users\DURANO JOHN\source\repos\Week4\bin\Debug\net7.0\NewsAPI.dll
+C:\Users\DURANO JOHN\source\repos\Week4\bin\Debug\net7.0\Newtonsoft.Json.dll
